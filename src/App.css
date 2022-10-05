@@ -1,38 +1,297 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500&family=Public+Sans:wght@300&display=swap');
+* {
+    font-family: 'Public Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button > button{
+    padding: 12px 1.75rem;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button > button:hover {
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/************* Styles for Reason Section **********/
+
+section.reason-container {
+    position: relative;
+    top: -9rem;;
+}
+div.head-part {
+    height: 10%;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.head-part > h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.head-part > div.descrip {
+    width: 52%;
+    line-height: 1.6rem;
+    opacity: 0.7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.box-section-reason {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
+
+@media only screen and (max-width: 990px) {
+    section.reason-container {
+        position: relative;
+        top: -2rem;
+    }
+
+    .head-part > h1 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .head-part > div.descrip {
+        width: 100%;
+        line-height: 1.6rem;
+        opacity: 0.7;
+        text-align: center;
+    }
+
+    .head-part > div.descrip > p {
+        font-size: 15px;
+    }
+
+    div.box-section-reason {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: 2rem;
+    }
+}
+
+/*************End of Styles for Reason Section **********/
+
+
+/************* Styles for BoxSec Section **********/
+
+div.box-container-bank {
+    width: 23%;
+    /* height: 300px; */
+    padding: 10px;
+}
+
+div.box-container-bank > p {
+    line-height: 1.6rem;
+    opacity: 0.7;
+}
+
+div.box-container-bank > img {
+    margin-bottom: 15px;
+}
+
+div.box-container-bank > h3 {
+    font-weight: 400;
+    font-size: 1.45rem;
+}
+
+@media only screen and (max-width: 990px) {
+    div.box-container-bank {
+        width: 100%;
+        /* height: 300px; */
+        padding: 10px;
+        text-align: center;
+    }
+
+    div.box-container-bank > p {
+        line-height: 1.6rem;
+        opacity: 0.7;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    div.box-container-bank > img {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    div.box-container-bank > h3 {
+        font-weight: 400;
+        font-size: 1.45rem;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+/*************End of Styles for BoxSec Section **********/
+
+
+/*************Start of Styles for Blog Section **********/
+
+div.blogs-details-cont {
+    width: 100%;
+    position: relative;
+    top: 0rem;
+}
+
+div.blog-heading-con {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.blogs-list {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 990px) {
+
+    div.blog-heading-con h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    div.blogs-list {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
+
+/*************End of Styles for Blog Section **********/
+
+
+/*************Start of Styles for Footer Section **********/
+
+div.footer-section {
+    width: 100%;
+    background-color: hsl(233, 26%, 24%);
+    height: auto;
+    display: flex;
+    padding: 0.89rem;
+    margin-top: 8rem;
+}
+
+footer.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.logo-social-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 4.5rem;
+    width: 25%;
+}
+
+div.log > img {
+    cursor: pointer;
+}
+div.social-links > a {
+    width: 25px;
+    height: 25px;
+    padding: 0 10px;
+}
+div.links > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+div.links {
+    width: 100%;
+    padding: 11px 0;
+    text-align: left;
+}
+div.part1, div.part2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+div.btn-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 0;
+}
+
+div.btn-copyright > p {
+    color: rgb(81, 81, 81);
+}
+
+@media screen and (max-width: 874px) {
+
+    div.footer-section {
+        padding: 0;
+    }
+
+    div.logo-social-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 2.9rem;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    footer.footer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+ 
+    div.part1 {
+        margin-top: 10px;
+    }
+
+    div.part2 {
+        margin-top: -20px;
+    }
+    div.part1, div.part2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div.social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div.links {
+        text-align: center;
+    }
+}
+
+/*************End of Styles for Footer Section **********/
+/* @media screen and (max-width: 874px) {
+    .button > button {
+        display: none;
+    }
+} */

@@ -1,0 +1,114 @@
+section.mid-portion-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* left part stylings starts here */
+div.left-part {
+    width: 50%;
+    padding: 0.5rem 10.2rem 9.2rem 8.5rem;
+    margin: 0 auto;
+}
+
+.left-part h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.left-part p {
+    line-height: 1.6rem;
+    opacity: 0.7;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+/* left part stylings ends here */
+
+/* right part stylings starts here */
+
+div.right-part {
+    position: relative;
+    width: 50%;
+}
+
+div.right-part > div.imageWrapper {
+    width: 100%;
+}
+
+div.imageWrapper > img#deskImg {
+    width: 160%;
+    height: 160%;
+    position: relative;
+    top: -9.5rem;
+    right: 10rem;
+}
+
+div.imageWrapper > img#mockImg {
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    top: -5.5rem;
+    right: -5.5rem;
+}
+
+/* right part stylings ends here */
+
+@media only screen and (max-width: 990px) {
+    section.mid-portion-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.left-part {
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: -8rem;
+    }
+    
+    .left-part h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .left-part p {
+        line-height: 1.6rem;
+        opacity: 0.7;
+        margin-bottom: 25px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    div.right-part {
+        width: 80%;
+    }
+
+    div.button.midpart {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.imageWrapper > img#deskImg {
+        width: 40rem;
+        /* height: 160%; */
+        position: relative;
+        top: -9.5rem;
+        right: 8rem;
+    }
+    
+    div.imageWrapper > img#mockImg {
+        width: 24rem;
+        height: 30rem;
+        position: absolute;
+        top: -5.5rem;
+        right: -3.5rem;
+    }
+}
