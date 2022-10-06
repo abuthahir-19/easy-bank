@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+To acces the application go to [Easy Banking App] (https://easybanking-6e3b1.web.app/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
