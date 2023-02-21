@@ -176,7 +176,7 @@ div.blogs-list {
     }
 
     div.blogs-list {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
