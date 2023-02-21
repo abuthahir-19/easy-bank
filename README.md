@@ -1,3 +1,6 @@
+# UI Design for EasyBank landing application referred from frontendmentor.io
+![Design preview for easybanking landing page application](./design/desktop-design.jpg)
+
 # Start Accessing the application
 To acces the application go to [Easy Banking App](https://easybanking-6e3b1.web.app)
 
